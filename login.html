@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"/>
+   
+    <!-- ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Perpustakaanku | Login</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <img src="assets/img/bg.jpg" alt="login image" class="bg-image" />
+
+      <form action="#" class="form-container">
+        <h1 class="form-title">Haloo Selamat Datang kembali...</h1>
+
+        <div class="form-content">
+          <div class="input-box">
+            <i class="ri-user-3-line input-icon"></i>
+
+            <div class="input-wrapper">
+              <input
+                type="text"
+                required
+                class="form-input"
+                id="name-input"
+                placeholder=" "
+              />
+              <label for="name-input" class="form-label">Username</label>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <i class="ri-lock-2-line input-icon"></i>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                required
+                class="form-input"
+                id="password-input"
+                placeholder=" "
+              />
+              <label for="password-input" class="form-label">Password</label>
+              <i class="ri-eye-off-line toggle-password" id="toggle-password"></i>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-button">Masuk</button>
+
+        <p class="register-link">
+          Belum punya akun? <a href="#">Daftar sekarang!</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
