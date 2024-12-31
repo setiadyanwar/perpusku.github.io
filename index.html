@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpusku</title>
+    <!-- ICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Perpusku.id</a>
+            </div>
+            <div class="group-nav">
+                <ul class="links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="transition">Transaksi</a></li>
+                    <li><a href="profil">Profil</a></li>
+                </ul>
+                <a href="login.html" class="btn-login">
+                    Login
+                </a>
+                <div class="toggle-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="responsive-menu">
+            <ul class="links">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="transition">Transaksi</a></li>
+                <li><a href="profil">Profil</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container isi">
+            <div class="logo-left">
+                <div class="content-left">
+                    <img src="assets/img/logo.png" alt="" srcset="">
+                    <h2>Langkah-langkah Penggunaan Website Perpustakaanku. &raquo;</h2>
+                    <p>Mohon simak tahapan disamping🙏😊</p>
+                </div>
+                
+            </div>
+            <div class="carousel">
+                <div class="carousel-content">
+                    <div class="content active">
+                        <img id="instruction" src="assets/img/info1.png" alt="">
+                        <h3>Step 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora, facere adipisci magni, aut quibusdam dignissimos consequuntur laboriosam rem, voluptas ducimus id ut distinctio aliquid. Non pariatur natus aliquam laboriosam.</p>
+                    </div>
+                    <div class="content">
+                        <img id="instruction" src="assets/img/info2.png" alt="">
+                        <h3>Step 2</h3>
+                        <p>Content for Step 2 goes here. Add your desired content and images.</p>
+                    </div>
+                    <div class="content">
+                        <img id="instruction" src="assets/img/bg.jpg" alt="">
+                        <h3>Step 3</h3>
+                        <p>Content for Step 3 goes here. Add your desired content and images.</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const responsiveMenu = document.querySelector('.responsive-menu');
+
+        toggleBtn.onclick = function() {
+            responsiveMenu.classList.toggle('open');
+            if (responsiveMenu.classList.contains('open')) {
+                toggleBtnIcon.classList.remove('ri-menu-line');
+                toggleBtnIcon.classList.add('ri-close-line');
+            } else {
+                toggleBtnIcon.classList.remove('ri-close-line');
+                toggleBtnIcon.classList.add('ri-menu-line');
+            }
+        }
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
