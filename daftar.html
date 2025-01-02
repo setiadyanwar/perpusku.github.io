@@ -68,6 +68,23 @@
         </div>
 
     </body>
+    <!-- Javascript -->
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const responsiveMenu = document.querySelector('.responsive-menu');
+
+        toggleBtn.onclick = function() {
+            responsiveMenu.classList.toggle('open');
+            if (responsiveMenu.classList.contains('open')) {
+                toggleBtnIcon.classList.remove('ri-menu-line');
+                toggleBtnIcon.classList.add('ri-close-line');
+            } else {
+                toggleBtnIcon.classList.remove('ri-close-line');
+                toggleBtnIcon.classList.add('ri-menu-line');
+            }
+        }
+    </script>
     <script src="js/script.js"></script>
     <script>
         showData();
