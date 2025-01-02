@@ -1,6 +1,6 @@
 let currentIndex = 0;
 let autoPlayInterval;
-const intervalTime = 2000; 
+const intervalTime = 3000; 
 
 function moveSlide(direction) {
     const contents = document.querySelectorAll('.carousel-content .content');

@@ -94,6 +94,11 @@ img {
   column-gap: 0.75rem;
   border-bottom: 2px solid var(--white);
 }
+
+.input-box label {
+  color: var(--white);
+}
+
 .input-icon, .toggle-password {
   font-size: 1.25rem;
 }
@@ -234,7 +239,6 @@ header{
 }
 
 
-
 .navbar .links{
   display: flex;
   gap: 2.5rem;
@@ -301,10 +305,16 @@ header{
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  display:flex;
   justify-content: space-between;
   gap: 4rem;
 }
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 
 .logo-left{
   display: grid;
@@ -407,6 +417,214 @@ button:hover {
   background-color: rgb(173, 195, 255);
 }
 
+/* Form Transaksi */
+#judul {
+  display: flex;
+  justify-content: space-between;
+  color: var(--black);
+  margin-bottom: 14px;
+}
+
+#judul a{
+  color:rgb(0, 119, 255);
+  text-decoration: underline;
+}
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray" width="24" height="24"><path d="M7 10l5 5 5-5H7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.form-check {
+  margin-right: 15px;
+  display: inline-block;
+  items-align: center;  
+}
+
+.form-check-input {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.submit{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.delete{
+  width: 100%;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.delete:hover{
+  background-color: #c82333;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col-md-6 {
+  width: 48%;
+}
+
+/* Tabel daftar transaksi */
+
+.judul-daftar{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: var(--black);
+}
+
+#back-link{
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto; 
+  box-sizing: border-box;
+}
+
+thead {
+  display: table-header-group; 
+}
+
+tbody {
+  display: table-row-group;
+}
+
+tr {
+  display: table-row;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+th {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* profile page */
+.profile {
+  width: 100%;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1,
+.profile h2 {
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.profile p {
+  margin-bottom: 1rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+.vision-mission {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.vision-mission p{
+  color: var(--black);
+  line-height: 1.8;
+}
+
+.vision-mission .vision,
+.vision-mission .mission {
+  flex: 1;
+  background-color: #f9f9f9;
+  color: var(--black);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission ul,li{
+  list-style-type: disc;
+  margin-left: 0.6rem;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--black);
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+  color: #007BFF;
+}
+
+/* Footer */
+.footer {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  bottom: 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 @media (max-width: 992px){
@@ -440,6 +658,29 @@ button:hover {
   .content{
     width: 100%;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col-md-6 {
+    width: 100%;
+  }
+
+  #judul {
+    flex-direction: column;
+    items-align: start;
+  }
+
+  #judul a{
+    items-align: start;
+  }
+  
+  .table {
+    display: block; /* Ubah tabel menjadi blok */
+    overflow-x: auto; /* Tambahkan scroll horizontal */
+  }
+
 }
 
 
@@ -460,6 +701,7 @@ button:hover {
     left: 2rem;
     width: unset;
   }
+
 
 @media screen and (max-width: 576px) {
 button.prev, button.next {

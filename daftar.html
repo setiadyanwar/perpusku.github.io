@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daftar</title>
+
+        <!-- ICON -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Perpusku.id</a>
+                </div>
+                <div class="group-nav">
+                    <ul class="links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="transaction.html">Transaksi</a></li>
+                        <li><a href="profile.html">Profil</a></li>
+                    </ul>
+                    <a href="login.html" class="btn-login">
+                        Login
+                    </a>
+                    <div class="toggle-btn">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="responsive-menu">
+                <ul class="links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="transaction.html">Transaksi</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <a id="back-link" href="transaction.html">&laquo; Kembali ke form</a>
+            <h1 class="judul-daftar">Daftar Transaksi</h1>
+            <table class="table" id="crudTable">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama</th>
+                        <th>Judul Buku</th>
+                        <th>Kategori</th>
+                        <th>Jenis Transaksi</th>
+                        <th>Tanggal Peminjaman</th>
+                        <th>Tanggal Pengembalian</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- data dinamis -->
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+    <script src="js/script.js"></script>
+    <script>
+        showData();
+    </script>
+</html>
+</div>
